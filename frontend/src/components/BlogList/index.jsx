@@ -8,9 +8,14 @@ export default function BlogList({ blogs, setBlog }) {
 
   return (
     <div className="blog-grid">
-      {blogs?.map((blog) => {
+      {blogs?.map((blog, index) => {
         return (
-          <BlogItem blog={blog} imageOrientation={"top"} setBlog={setBlog} />
+          <BlogItem
+            key={index}
+            blog={blog}
+            imageOrientation={"top"}
+            setBlog={setBlog}
+          />
         );
       })}
     </div>
