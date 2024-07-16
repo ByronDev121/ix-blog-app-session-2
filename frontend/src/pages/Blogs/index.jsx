@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+
 import Navbar from "../../components/Navbar";
 import Heading from "../../components/Heading";
 import BlogList from "../../components/BlogList";
@@ -12,22 +14,23 @@ const blogsData = data.blogPosts.reverse();
 const categories = data.categories;
 
 export default function BlogsPage() {
-  const [categoryId, setCategoryId] = useState();
+  const { categoryId } = useParams();
+
+  const [displayCategoryId, setDisplayCategoryId] = useState(
+    categoryId && parseInt(categoryId)
+  );
   const [blogs, setBlogs] = useState(blogsData);
 
   useEffect(() => {
     const filteredBlogs = blogsData.filter((blog) =>
       blog.categories.some((category) =>
-        categoryId === undefined ? true : category.id === categoryId
+        displayCategoryId === undefined
+          ? true
+          : category.id === displayCategoryId
       )
     );
     setBlogs(filteredBlogs);
-  }, [categoryId]);
-
-  const setBlog = (blogId) => {
-    console.log("Function Prop executed");
-    console.log(blogId);
-  };
+  }, [displayCategoryId]);
 
   return (
     <>
@@ -38,13 +41,13 @@ export default function BlogsPage() {
           <CategoriesScrollList
             categories={categories}
             categoryId={categoryId}
-            setCategoryId={setCategoryId}
+            setCategoryId={setDisplayCategoryId}
           />
         </div>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <p className="page-subtitle">Blog Posts</p>
         </div>
-        <BlogList blogs={blogs} setBlog={setBlog} />
+        <BlogList blogs={blogs} />
       </div>
       <Footer />
     </>

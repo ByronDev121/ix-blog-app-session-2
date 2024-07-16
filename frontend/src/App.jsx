@@ -12,6 +12,8 @@ import "./App.css";
 import HomePage from "./pages/Home";
 import BlogsPage from "./pages/Blogs";
 import CategoriesPage from "./pages/Categories";
+import BlogPage from "./pages/Blog";
+import ProfilePage from "./pages/Profile";
 
 const routes = [
   {
@@ -29,6 +31,14 @@ const routes = [
   {
     path: "/blogs/:categoryId?",
     element: <BlogsPage />,
+  },
+  {
+    path: "/blog/:blogId",
+    element: <BlogPage />,
+  },
+  {
+    path: "/profile",
+    element: <ProfilePage />,
   },
 ];
 

@@ -18,12 +18,7 @@ export default function HomePage() {
       <div className="container">
         <Heading />
         <Subheading subHeading={"Recent blogs"} />
-        <BlogGrid
-          blogs={blogs}
-          setBlog={(blogID) => {
-            console.log("Selected Blog Clicked:", blogID);
-          }}
-        />
+        <BlogGrid blogs={blogs} />
         <Subheading subHeading={"Categories"} />
         <CategoriesList categories={categories} />
         <Footer />
