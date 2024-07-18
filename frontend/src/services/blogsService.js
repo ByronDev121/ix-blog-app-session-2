@@ -1,9 +1,7 @@
 const getBlogs = async () => {
   try {
-    const res = await fetch(
-      "https://ix-blog-app-2d5c689132cd.herokuapp.com/api/blogs"
-    );
-    if (res.status !== 200) {
+    const res = await fetch("http://localhost:8000/api/blogs");
+    if (!res.ok) {
       throw Error(res.statusText);
     }
     const data = await res.json();
@@ -17,10 +15,9 @@ const getBlogsByCategoryId = async (categoryId) => {
   let categoryIdReq = categoryId ? categoryId : null;
   try {
     const res = await fetch(
-      "https://ix-blog-app-2d5c689132cd.herokuapp.com/api/blogs/category/" +
-        categoryIdReq
+      "http://localhost:8000/api/blogs/category/" + categoryIdReq
     );
-    if (res.status !== 200) {
+    if (!res.ok) {
       throw Error(res.statusText);
     }
     const data = await res.json();
