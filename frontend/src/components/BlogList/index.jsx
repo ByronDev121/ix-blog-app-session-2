@@ -1,6 +1,8 @@
 import React from "react";
 import BlogItem from "../BlogItem";
 
+import "./index.css";
+
 export default function BlogList({ blogs }) {
   if (!blogs || !blogs.length) {
     return null;
