@@ -9,6 +9,9 @@ import BlogList from "../../components/BlogList";
 import Footer from "../../components/Footer";
 import CategoriesScrollList from "../../components/CategoriesScrollList";
 import Loader from "../../components/Loader";
+import SuccessToast from "../../components/SuccessToast";
+import ErrorToast from "../../components/ErrorToast";
+import AddEditBlogModal from "../../components/AddEditBlogModal";
 
 import blogsService from "../../services/blogsService";
 import categoriesService from "../../services/categoryService";
@@ -16,30 +19,42 @@ import categoriesService from "../../services/categoryService";
 export default function BlogsPage() {
   const { categoryId } = useParams();
 
-  const [displayCategoryId, setDisplayCategoryId] = useState(
-    categoryId && parseInt(categoryId)
-  );
+  const [loading, setLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [message, setMessage] = useState("");
+
   const [blogs, setBlogs] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [loading, setLoading] = useState(true);
+
+  const [addBlog, setAddBlog] = useState();
+  const [editBlog, setEditBlog] = useState();
+  const [deleteBlog, setDeleteBlog] = useState();
 
   useEffect(() => {
     async function fetchData() {
-      setLoading(true);
-      const blogRes = await blogsService.getBlogsByCategoryId(
-        displayCategoryId
-      );
-      const categoryRes = await categoriesService.getCategories();
-      if (blogRes.data.length) {
+      try {
+        setLoading(true);
+        const blogRes = await blogsService.getBlogsByCategoryId(categoryId);
+        const categoryRes = await categoriesService.getCategories();
         setBlogs(blogRes.data);
-      }
-      if (categoryRes.data.length) {
         setCategories(categoryRes.data);
+        setLoading(false);
+      } catch (error) {
+        setIsError(true);
+        setMessage(error.message);
+        setLoading(false);
       }
-      setLoading(false);
     }
     fetchData();
-  }, [displayCategoryId]);
+  }, [categoryId]);
+
+  const onBlogEdit = (blog) => {
+    setEditBlog(blog);
+  };
+  const onBlogDelete = (blog) => {
+    setDeleteBlog(blog);
+  };
 
   if (loading) {
     return <Loader />;
@@ -54,15 +69,41 @@ export default function BlogsPage() {
           <CategoriesScrollList
             categories={categories}
             categoryId={categoryId}
-            setCategoryId={setDisplayCategoryId}
+            // setCategoryId={setDisplayCategoryId}
           />
         </div>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <p className="page-subtitle">Blog Posts</p>
         </div>
-        <BlogList blogs={blogs} />
+        <BlogList
+          blogs={blogs}
+          onBlogEdit={onBlogEdit}
+          onBlogDelete={onBlogDelete}
+        />
       </div>
       <Footer />
+      <SuccessToast
+        show={isSuccess}
+        message={message}
+        onClose={() => {
+          setIsSuccess(false);
+        }}
+      />
+      <ErrorToast
+        show={isError}
+        message={message}
+        onClose={() => {
+          setIsError(false);
+        }}
+      />
+      <AddEditBlogModal
+        addBlog={addBlog}
+        editBlog={editBlog}
+        categories={categories}
+        createBlog={() => {}}
+        updateBlog={() => {}}
+        onClose={() => {}}
+      />
     </>
   );
 }

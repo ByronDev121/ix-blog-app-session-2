@@ -3,6 +3,9 @@ import React from "react";
 import "./index.css";
 
 export default function Categories({ blog }) {
+  if (!blog) {
+    return null;
+  }
   return (
     <div className="flex-wrap">
       {blog.categories.map((category, index) => {

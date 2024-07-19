@@ -64,6 +64,22 @@ const getBlogByCategoryId = async (req, res) => {
   }
 };
 
+const getBlogByAuthorId = async (req, res) => {
+  try {
+    let filter = {};
+    if (req.params.id != "null" && req.params.id != "undefined") {
+      filter = { authorId: req.params.id };
+    }
+    const blogsRed = await Blog.find(filter).populate({
+      path: "categoryIds",
+    });
+    res.status(200).send({ message: "Return blog by ID!", data: blogsRed });
+  } catch (error) {
+    const message = error?.message ? error.message : "Internal server error";
+    res.status(500).json({ message });
+  }
+};
+
 const updateBlogById = async (req, res) => {
   try {
     const blog = await Blog.findById(req.params.id).populate({
@@ -106,6 +122,7 @@ module.exports = {
   getBlogs,
   getBlogById,
   getBlogByCategoryId,
+  getBlogByAuthorId,
   updateBlogById,
   deleteBlogById,
 };

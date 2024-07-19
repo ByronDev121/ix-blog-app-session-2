@@ -3,7 +3,7 @@ import BlogItem from "../BlogItem";
 
 import "./index.css";
 
-export default function BlogList({ blogs }) {
+export default function BlogList({ blogs, onBlogEdit, onBlogDelete }) {
   if (!blogs || !blogs.length) {
     return null;
   }
@@ -11,7 +11,15 @@ export default function BlogList({ blogs }) {
   return (
     <div className="blog-grid">
       {blogs?.map((blog, index) => {
-        return <BlogItem key={index} blog={blog} imageOrientation={"top"} />;
+        return (
+          <BlogItem
+            key={index}
+            blog={blog}
+            imageOrientation={"top"}
+            onBlogEdit={onBlogEdit}
+            onBlogDelete={onBlogDelete}
+          />
+        );
       })}
     </div>
   );

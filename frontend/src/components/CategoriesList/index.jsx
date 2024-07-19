@@ -8,6 +8,9 @@ export default function CategoriesList({ categories }) {
   const navigateToBlog = (categoryId) => {
     navigate("/blogs/" + categoryId);
   };
+  if (!categories) {
+    return null;
+  }
   return (
     <div className="category-list">
       {categories.map((category) => {
