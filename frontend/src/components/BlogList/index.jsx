@@ -1,5 +1,6 @@
 import React from "react";
 import BlogItem from "../BlogItem";
+import PropTypes from "prop-types";
 
 import "./index.css";
 
@@ -24,3 +25,9 @@ export default function BlogList({ blogs, onBlogEdit, onBlogDelete }) {
     </div>
   );
 }
+
+BlogList.prototype = {
+  blogs: PropTypes.array.isRequired,
+  onBlogEdit: PropTypes.func,
+  onBlogDelete: PropTypes.func,
+};

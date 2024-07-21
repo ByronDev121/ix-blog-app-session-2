@@ -1,3 +1,7 @@
+import React from "react";
+
+import PropTypes from "prop-types";
+
 export default function EditButtons({ onEdit, onDelete, onNavigate }) {
   return (
     <>
@@ -46,3 +50,9 @@ export default function EditButtons({ onEdit, onDelete, onNavigate }) {
     </>
   );
 }
+
+EditButtons.prototype = {
+  onEdit: PropTypes.func.isRequired,
+  onDelete: PropTypes.func.isRequired,
+  onNavigate: PropTypes.func.isRequired,
+};

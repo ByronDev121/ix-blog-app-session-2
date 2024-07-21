@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import BlogItemText from "../BlogItemText";
 import EditButtons from "../EditButtons";
@@ -52,3 +53,11 @@ export default function BlogItem({
     );
   }
 }
+
+BlogItem.prototype = {
+  index: PropTypes.number.isRequired,
+  blog: PropTypes.object.isRequired,
+  imageOrientation: PropTypes.string.isRequired,
+  onBlogEdit: PropTypes.func,
+  onBlogDelete: PropTypes.func,
+};

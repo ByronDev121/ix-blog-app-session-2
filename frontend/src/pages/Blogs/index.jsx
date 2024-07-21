@@ -12,6 +12,7 @@ import Loader from "../../components/Loader";
 import SuccessToast from "../../components/SuccessToast";
 import ErrorToast from "../../components/ErrorToast";
 import AddEditBlogModal from "../../components/AddEditBlogModal";
+import DeleteBlogModal from "../../components/DeleteBlogModal";
 
 import blogsService from "../../services/blogsService";
 import categoriesService from "../../services/categoryService";
@@ -27,9 +28,9 @@ export default function BlogsPage() {
   const [blogs, setBlogs] = useState([]);
   const [categories, setCategories] = useState([]);
 
-  const [addBlog, setAddBlog] = useState();
-  const [editBlog, setEditBlog] = useState();
-  const [deleteBlog, setDeleteBlog] = useState();
+  const [addBlog, setAddBlog] = useState(null);
+  const [editBlog, setEditBlog] = useState(null);
+  const [deleteBlog, setDeleteBlog] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -49,11 +50,86 @@ export default function BlogsPage() {
     fetchData();
   }, [categoryId]);
 
+  const onBlogAdd = (blog) => {
+    setAddBlog({
+      // image: "",
+      title: "",
+      description: "",
+      categories: [],
+      content: [
+        {
+          sectionHeading: "",
+          sectionText: "",
+        },
+      ],
+      authorId: "",
+    });
+  };
   const onBlogEdit = (blog) => {
     setEditBlog(blog);
   };
   const onBlogDelete = (blog) => {
     setDeleteBlog(blog);
+  };
+
+  const createBlog = async (blog) => {
+    try {
+      setLoading(true);
+      const blogRes = await blogsService.createBlog(blog);
+      setBlogs([...blogs, blogRes.data]);
+      setAddBlog(null);
+      setMessage(blogRes.message);
+      setIsSuccess(true);
+      setLoading(false);
+    } catch (error) {
+      setMessage(error.message);
+      setIsError(true);
+      setLoading(false);
+    }
+  };
+
+  const updateBlog = async (blog) => {
+    try {
+      setLoading(true);
+      const blogRes = await blogsService.updateBlog(blog);
+      const blogIndex = blogs.findIndex((b) => b.id === blog.id);
+      const updatedBlogs = [...blogs];
+      updatedBlogs[blogIndex] = blogRes.data;
+      setBlogs(updatedBlogs);
+      setEditBlog(null);
+      setMessage("Blog updated successfully");
+      setIsSuccess(true);
+      setLoading(false);
+    } catch (error) {
+      setIsError(true);
+      setMessage(error.message);
+      setLoading(false);
+    }
+  };
+
+  const removeBlog = async (blog) => {
+    try {
+      setLoading(true);
+      await blogsService.deleteBlog(blog.id);
+      const updatedBlogs = blogs.filter((b) => b.id !== blog.id);
+      setBlogs(updatedBlogs);
+      setDeleteBlog(null);
+      setMessage("Blog deleted successfully");
+      setIsSuccess(true);
+      setLoading(false);
+    } catch (error) {
+      setIsError(true);
+      setMessage(error.message);
+      setLoading(false);
+    }
+  };
+
+  const AddButton = () => {
+    return (
+      <button className="btn btn-outline-dark h-75" onClick={onBlogAdd}>
+        ADD BLOG
+      </button>
+    );
   };
 
   if (loading) {
@@ -69,11 +145,11 @@ export default function BlogsPage() {
           <CategoriesScrollList
             categories={categories}
             categoryId={categoryId}
-            // setCategoryId={setDisplayCategoryId}
           />
         </div>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <p className="page-subtitle">Blog Posts</p>
+          <AddButton />
         </div>
         <BlogList
           blogs={blogs}
@@ -100,9 +176,21 @@ export default function BlogsPage() {
         addBlog={addBlog}
         editBlog={editBlog}
         categories={categories}
-        createBlog={() => {}}
-        updateBlog={() => {}}
-        onClose={() => {}}
+        createBlog={createBlog}
+        updateBlog={updateBlog}
+        onClose={() => {
+          setAddBlog(null);
+          setEditBlog(null);
+        }}
+      />
+      <DeleteBlogModal
+        deleteBlog={deleteBlog}
+        removeBlog={() => {
+          removeBlog(deleteBlog);
+        }}
+        onClose={() => {
+          setDeleteBlog(null);
+        }}
       />
     </>
   );

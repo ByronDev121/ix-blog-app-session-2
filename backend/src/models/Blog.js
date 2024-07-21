@@ -5,6 +5,7 @@ const blogSchema = new mongoose.Schema(
     author: {
       type: Object,
       default: {
+        id: 1,
         firstName: "Byron",
         lastName: "de Villiers",
         email: "byron@mail.com",

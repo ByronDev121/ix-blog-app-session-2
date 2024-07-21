@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import "./index.css";
 
@@ -45,3 +46,7 @@ export default function CategoriesList({ categories }) {
     </div>
   );
 }
+
+CategoriesList.prototype = {
+  categories: PropTypes.array.isRequired,
+};
