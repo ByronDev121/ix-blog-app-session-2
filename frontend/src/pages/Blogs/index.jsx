@@ -126,7 +126,7 @@ export default function BlogsPage() {
 
   const AddButton = () => {
     return (
-      <button className="btn btn-outline-dark h-75" onClick={onBlogAdd}>
+      <button className="btn btn-outline-dark my-4" onClick={onBlogAdd}>
         ADD BLOG
       </button>
     );
