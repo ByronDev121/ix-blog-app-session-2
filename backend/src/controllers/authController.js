@@ -90,6 +90,7 @@ const getUser = async (req, res) => {
       res.status(404).json({ message: "User does not exist" });
       return;
     }
+    delete user.password;
     res.status(200).json({ message: "Successfully found user!", data: user });
   } catch (error) {
     res.status(500).json({ message: error.message, data: [] });
