@@ -1,0 +1,131 @@
+Date : 2024-07-25 11:19:53
+Directory : /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src
+Total : 63 files,  2439 codes, 1 comments, 214 blanks, all 2654 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JavaScript JSX |         27 |      2,120 |          4 |        208 |      2,332 |
+| JSON           |          1 |        298 |          0 |          0 |        298 |
+| CSS            |         15 |        247 |          0 |         47 |        294 |
+| XML            |          1 |          1 |          0 |          0 |          1 |
+| JavaScript     |         19 |       -227 |         -3 |        -41 |       -271 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                     | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                        |         63 |      2,439 |          1 |        214 |      2,654 |
+| . (Files)                                                                                                |          9 |        397 |          7 |         20 |        424 |
+| ..                                                                                                       |         12 |       -569 |        -10 |        -74 |       -653 |
+| ../..                                                                                                    |         12 |       -569 |        -10 |        -74 |       -653 |
+| ../../backend                                                                                            |         12 |       -569 |        -10 |        -74 |       -653 |
+| ../../backend/src                                                                                        |         12 |       -569 |        -10 |        -74 |       -653 |
+| ../../backend/src (Files)                                                                                |          1 |        -18 |         -2 |         -8 |        -28 |
+| ../../backend/src/controllers                                                                            |          3 |       -332 |         -8 |        -23 |       -363 |
+| ../../backend/src/database                                                                               |          1 |        -11 |          0 |         -3 |        -14 |
+| ../../backend/src/middleware                                                                             |          1 |        -31 |          0 |         -4 |        -35 |
+| ../../backend/src/models                                                                                 |          3 |       -118 |          0 |        -11 |       -129 |
+| ../../backend/src/routes                                                                                 |          3 |        -59 |          0 |        -25 |        -84 |
+| components                                                                                               |         27 |      1,413 |          3 |        145 |      1,561 |
+| components/AddEditBlogModal                                                                              |          1 |        312 |          0 |         15 |        327 |
+| components/AddEditCategoryModal                                                                          |          1 |        156 |          0 |         10 |        166 |
+| components/BlogGrid                                                                                      |          2 |         92 |          0 |         19 |        111 |
+| components/BlogItem                                                                                      |          2 |        115 |          0 |         18 |        133 |
+| components/BlogItemText                                                                                  |          2 |         46 |          0 |          7 |         53 |
+| components/BlogList                                                                                      |          2 |         39 |          0 |          7 |         46 |
+| components/Categories                                                                                    |          2 |         46 |          0 |          6 |         52 |
+| components/CategoriesList                                                                                |          2 |         89 |          0 |          8 |         97 |
+| components/CategoriesScrollList                                                                          |          1 |         37 |          3 |          3 |         43 |
+| components/DeleteBlogModal                                                                               |          1 |         91 |          0 |         10 |        101 |
+| components/DeleteCategoryModal                                                                           |          1 |         87 |          0 |         10 |         97 |
+| components/EditButtons                                                                                   |          1 |         55 |          0 |          4 |         59 |
+| components/ErrorToast                                                                                    |          1 |         48 |          0 |          5 |         53 |
+| components/Footer                                                                                        |          1 |         28 |          0 |          2 |         30 |
+| components/Heading                                                                                       |          2 |         13 |          0 |          4 |         17 |
+| components/Loader                                                                                        |          1 |         10 |          0 |          2 |         12 |
+| components/Navbar                                                                                        |          1 |         86 |          0 |          6 |         92 |
+| components/Subheading                                                                                    |          2 |         15 |          0 |          5 |         20 |
+| components/SuccessToast                                                                                  |          1 |         48 |          0 |          4 |         52 |
+| pages                                                                                                    |         12 |        889 |          1 |         98 |        988 |
+| pages/Blog                                                                                               |          2 |        116 |          0 |         15 |        131 |
+| pages/Blogs                                                                                              |          2 |        195 |          1 |         19 |        215 |
+| pages/Categories                                                                                         |          2 |        160 |          0 |         18 |        178 |
+| pages/Home                                                                                               |          1 |         67 |          0 |          7 |         74 |
+| pages/Login                                                                                              |          2 |        115 |          0 |         15 |        130 |
+| pages/Profile                                                                                            |          1 |         82 |          0 |         12 |         94 |
+| pages/Register                                                                                           |          2 |        154 |          0 |         12 |        166 |
+| services                                                                                                 |          3 |        309 |          0 |         25 |        334 |
++----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                                 | language       | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/controllers/authController.js              | JavaScript     |       -112 |         -8 |         -8 |       -128 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/controllers/blogController.js              | JavaScript     |       -156 |          0 |         -9 |       -165 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/controllers/categoryController.js          | JavaScript     |        -64 |          0 |         -6 |        -70 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/database/db.js                             | JavaScript     |        -11 |          0 |         -3 |        -14 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/index.js                                   | JavaScript     |        -18 |         -2 |         -8 |        -28 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/middleware/authMiddleware.js               | JavaScript     |        -31 |          0 |         -4 |        -35 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/models/Blog.js                             | JavaScript     |        -60 |          0 |         -4 |        -64 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/models/Category.js                         | JavaScript     |        -24 |          0 |         -4 |        -28 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/models/User.js                             | JavaScript     |        -34 |          0 |         -3 |        -37 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/routes/auth.js                             | JavaScript     |        -16 |          0 |         -7 |        -23 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/routes/blogs.js                            | JavaScript     |        -26 |          0 |        -10 |        -36 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/routes/categories.js                       | JavaScript     |        -17 |          0 |         -8 |        -25 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/App.css                                   | CSS            |          0 |          0 |          1 |          1 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/App.jsx                                   | JavaScript JSX |         53 |          0 |          9 |         62 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/App.test.js                               | JavaScript     |          7 |          0 |          2 |          9 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/AddEditBlogModal/index.jsx     | JavaScript JSX |        312 |          0 |         15 |        327 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/AddEditCategoryModal/index.jsx | JavaScript JSX |        156 |          0 |         10 |        166 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogGrid/index.css             | CSS            |         52 |          0 |         12 |         64 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogGrid/index.jsx             | JavaScript JSX |         40 |          0 |          7 |         47 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogItem/index.css             | CSS            |         53 |          0 |         11 |         64 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogItem/index.jsx             | JavaScript JSX |         62 |          0 |          7 |         69 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogItemText/index.css         | CSS            |         12 |          0 |          2 |         14 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogItemText/index.jsx         | JavaScript JSX |         34 |          0 |          5 |         39 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogList/index.css             | CSS            |         10 |          0 |          2 |         12 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogList/index.jsx             | JavaScript JSX |         29 |          0 |          5 |         34 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Categories/index.css           | CSS            |          9 |          0 |          1 |         10 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Categories/index.jsx           | JavaScript JSX |         37 |          0 |          5 |         42 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/CategoriesList/index.css       | CSS            |         22 |          0 |          4 |         26 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/CategoriesList/index.jsx       | JavaScript JSX |         67 |          0 |          4 |         71 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/CategoriesScrollList/index.jsx | JavaScript JSX |         37 |          3 |          3 |         43 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/DeleteBlogModal/index.jsx      | JavaScript JSX |         91 |          0 |         10 |        101 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/DeleteCategoryModal/index.jsx  | JavaScript JSX |         87 |          0 |         10 |         97 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/EditButtons/index.jsx          | JavaScript JSX |         55 |          0 |          4 |         59 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/ErrorToast/index.jsx           | JavaScript JSX |         48 |          0 |          5 |         53 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Footer/index.jsx               | JavaScript JSX |         28 |          0 |          2 |         30 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Heading/index.css              | CSS            |          8 |          0 |          1 |          9 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Heading/index.jsx              | JavaScript JSX |          5 |          0 |          3 |          8 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Loader/index.jsx               | JavaScript JSX |         10 |          0 |          2 |         12 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Navbar/index.jsx               | JavaScript JSX |         86 |          0 |          6 |         92 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Subheading/index.css           | CSS            |          6 |          0 |          1 |          7 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Subheading/index.jsx           | JavaScript JSX |          9 |          0 |          4 |         13 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/SuccessToast/index.jsx         | JavaScript JSX |         48 |          0 |          4 |         52 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/dummy-data.json                           | JSON           |        298 |          0 |          0 |        298 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/index.css                                 | CSS            |         12 |          0 |          2 |         14 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/index.js                                  | JavaScript     |         13 |          3 |          3 |         19 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/logo.svg                                  | XML            |          1 |          0 |          0 |          1 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Blog/index.css                      | CSS            |         18 |          0 |          3 |         21 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Blog/index.jsx                      | JavaScript JSX |         98 |          0 |         12 |        110 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Blogs/index.css                     | CSS            |         13 |          0 |          2 |         15 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Blogs/index.jsx                     | JavaScript JSX |        182 |          1 |         17 |        200 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Categories/index.css                | CSS            |          4 |          0 |          1 |          5 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Categories/index.jsx                | JavaScript JSX |        156 |          0 |         17 |        173 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Home/index.jsx                      | JavaScript JSX |         67 |          0 |          7 |         74 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Login/index.css                     | CSS            |         14 |          0 |          2 |         16 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Login/index.jsx                     | JavaScript JSX |        101 |          0 |         13 |        114 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Profile/index.jsx                   | JavaScript JSX |         82 |          0 |         12 |         94 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Register/index.css                  | CSS            |         14 |          0 |          2 |         16 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Register/index.jsx                  | JavaScript JSX |        140 |          0 |         10 |        150 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/reportWebVitals.js                        | JavaScript     |         12 |          0 |          2 |         14 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/services/authService.js                   | JavaScript     |         76 |          0 |         10 |         86 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/services/blogsService.js                  | JavaScript     |        141 |          0 |          9 |        150 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/services/categoryService.js               | JavaScript     |         92 |          0 |          6 |         98 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/setupTests.js                             | JavaScript     |          1 |          4 |          1 |          6 |
+| Total                                                                                                    |                |      2,439 |          1 |        214 |      2,654 |
++----------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

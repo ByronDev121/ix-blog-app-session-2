@@ -1,13 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
+import { useSelector } from "react-redux";
 
 import "./index.css";
 import EditButtons from "../EditButtons";
 
-export default function CategoriesList({ categories, onEdit, onDelete }) {
+export default function CategoriesList({ onEdit, onDelete }) {
   const user = JSON.parse(localStorage.getItem("user"));
   const navigate = useNavigate();
+  const { categories } = useSelector((state) => state.categories);
   const navigateToBlog = (categoryId) => {
     if (onEdit && onDelete) return;
     navigate("/blogs/" + categoryId);
@@ -64,7 +66,6 @@ export default function CategoriesList({ categories, onEdit, onDelete }) {
 }
 
 CategoriesList.prototype = {
-  categories: PropTypes.array.isRequired,
   onEdit: PropTypes.func,
   onDelete: PropTypes.func,
 };
