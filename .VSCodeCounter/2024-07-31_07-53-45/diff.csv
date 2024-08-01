@@ -1,0 +1,72 @@
+"filename", "language", "JavaScript", "XML", "JavaScript JSX", "CSS", "JSON", "comment", "blank", "total"
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/controllers/authController.js", "JavaScript", -112, 0, 0, 0, 0, -8, -8, -128
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/controllers/blogController.js", "JavaScript", -159, 0, 0, 0, 0, 0, -9, -168
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/controllers/categoryController.js", "JavaScript", -67, 0, 0, 0, 0, 0, -6, -73
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/database/db.js", "JavaScript", -11, 0, 0, 0, 0, 0, -3, -14
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/index.js", "JavaScript", -18, 0, 0, 0, 0, -2, -8, -28
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/middleware/authMiddleware.js", "JavaScript", -31, 0, 0, 0, 0, 0, -4, -35
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/models/Blog.js", "JavaScript", -60, 0, 0, 0, 0, 0, -4, -64
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/models/Category.js", "JavaScript", -24, 0, 0, 0, 0, 0, -4, -28
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/models/User.js", "JavaScript", -34, 0, 0, 0, 0, 0, -3, -37
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/routes/auth.js", "JavaScript", -16, 0, 0, 0, 0, 0, -7, -23
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/routes/blogs.js", "JavaScript", -26, 0, 0, 0, 0, 0, -10, -36
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/routes/categories.js", "JavaScript", -17, 0, 0, 0, 0, 0, -8, -25
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/App.css", "CSS", 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/App.jsx", "JavaScript JSX", 0, 0, 53, 0, 0, 0, 9, 62
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/App.test.js", "JavaScript", 7, 0, 0, 0, 0, 0, 2, 9
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/app/store.js", "JavaScript", 13, 0, 0, 0, 0, 0, 3, 16
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/AddEditBlogModal/index.jsx", "JavaScript JSX", 0, 0, 297, 0, 0, 0, 19, 316
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/AddEditCategoryModal/index.jsx", "JavaScript JSX", 0, 0, 150, 0, 0, 0, 15, 165
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogGrid/index.css", "CSS", 0, 0, 0, 52, 0, 0, 12, 64
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogGrid/index.jsx", "JavaScript JSX", 0, 0, 40, 0, 0, 0, 9, 49
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogItem/index.css", "CSS", 0, 0, 0, 53, 0, 0, 11, 64
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogItem/index.jsx", "JavaScript JSX", 0, 0, 62, 0, 0, 0, 7, 69
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogItemText/index.css", "CSS", 0, 0, 0, 12, 0, 0, 2, 14
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogItemText/index.jsx", "JavaScript JSX", 0, 0, 34, 0, 0, 0, 5, 39
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogList/index.css", "CSS", 0, 0, 0, 10, 0, 0, 2, 12
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/BlogList/index.jsx", "JavaScript JSX", 0, 0, 34, 0, 0, 0, 8, 42
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Categories/index.css", "CSS", 0, 0, 0, 9, 0, 0, 1, 10
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Categories/index.jsx", "JavaScript JSX", 0, 0, 37, 0, 0, 0, 5, 42
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/CategoriesList/index.css", "CSS", 0, 0, 0, 22, 0, 0, 4, 26
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/CategoriesList/index.jsx", "JavaScript JSX", 0, 0, 68, 0, 0, 0, 4, 72
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/CategoriesScrollList/index.jsx", "JavaScript JSX", 0, 0, 34, 0, 0, 0, 3, 37
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/DeleteBlogModal/index.jsx", "JavaScript JSX", 0, 0, 89, 0, 0, 0, 14, 103
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/DeleteCategoryModal/index.jsx", "JavaScript JSX", 0, 0, 83, 0, 0, 0, 10, 93
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/EditButtons/index.jsx", "JavaScript JSX", 0, 0, 55, 0, 0, 0, 4, 59
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/ErrorToast/index.jsx", "JavaScript JSX", 0, 0, 48, 0, 0, 0, 5, 53
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Footer/index.jsx", "JavaScript JSX", 0, 0, 28, 0, 0, 0, 2, 30
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Heading/index.css", "CSS", 0, 0, 0, 8, 0, 0, 1, 9
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Heading/index.jsx", "JavaScript JSX", 0, 0, 5, 0, 0, 0, 3, 8
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Loader/index.jsx", "JavaScript JSX", 0, 0, 10, 0, 0, 0, 2, 12
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Navbar/index.jsx", "JavaScript JSX", 0, 0, 86, 0, 0, 0, 6, 92
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Subheading/index.css", "CSS", 0, 0, 0, 6, 0, 0, 1, 7
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/Subheading/index.jsx", "JavaScript JSX", 0, 0, 9, 0, 0, 0, 4, 13
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/components/SuccessToast/index.jsx", "JavaScript JSX", 0, 0, 48, 0, 0, 0, 4, 52
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/dummy-data.json", "JSON", 0, 0, 0, 0, 298, 0, 0, 298
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/features/authSlice.js", "JavaScript", 113, 0, 0, 0, 0, 4, 9, 126
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/features/authorSlice.js", "JavaScript", 78, 0, 0, 0, 0, 5, 7, 90
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/features/blogsSlice.js", "JavaScript", 212, 0, 0, 0, 0, 6, 11, 229
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/features/categoriesSlice.js", "JavaScript", 159, 0, 0, 0, 0, 2, 9, 170
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/hooks/useBlogs.js", "JavaScript", 42, 0, 0, 0, 0, 1, 9, 52
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/hooks/useCategories.js", "JavaScript", 35, 0, 0, 0, 0, 0, 9, 44
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/index.css", "CSS", 0, 0, 0, 12, 0, 0, 2, 14
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/index.js", "JavaScript", 17, 0, 0, 0, 0, 3, 3, 23
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/logo.svg", "XML", 0, 1, 0, 0, 0, 0, 0, 1
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Blog/index.css", "CSS", 0, 0, 0, 18, 0, 0, 3, 21
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Blog/index.jsx", "JavaScript JSX", 0, 0, 89, 0, 0, 0, 10, 99
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Blogs/index.css", "CSS", 0, 0, 0, 13, 0, 0, 2, 15
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Blogs/index.jsx", "JavaScript JSX", 0, 0, 88, 0, 0, 0, 14, 102
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Categories/index.css", "CSS", 0, 0, 0, 4, 0, 0, 1, 5
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Categories/index.jsx", "JavaScript JSX", 0, 0, 81, 0, 0, 0, 11, 92
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Home/index.jsx", "JavaScript JSX", 0, 0, 72, 0, 0, 0, 10, 82
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Login/index.css", "CSS", 0, 0, 0, 14, 0, 0, 2, 16
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Login/index.jsx", "JavaScript JSX", 0, 0, 95, 0, 0, 0, 13, 108
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Profile/index.jsx", "JavaScript JSX", 0, 0, 82, 0, 0, 0, 12, 94
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Register/index.css", "CSS", 0, 0, 0, 14, 0, 0, 2, 16
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/pages/Register/index.jsx", "JavaScript JSX", 0, 0, 130, 0, 0, 0, 10, 140
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/reportWebVitals.js", "JavaScript", 12, 0, 0, 0, 0, 0, 2, 14
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/services/authService.js", "JavaScript", 76, 0, 0, 0, 0, 0, 10, 86
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/services/blogsService.js", "JavaScript", 141, 0, 0, 0, 0, 0, 9, 150
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/services/categoryService.js", "JavaScript", 92, 0, 0, 0, 0, 0, 6, 98
+"/Users/byron/DevitTechnology/Projects/iX/blog-app/frontend/src/setupTests.js", "JavaScript", 1, 0, 0, 0, 0, 4, 1, 6
+"Total", "-", 423, 1, 1907, 247, 298, 15, 281, 3172

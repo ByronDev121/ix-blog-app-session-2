@@ -1,10 +1,10 @@
 # Details
 
-Date : 2024-07-25 11:19:26
+Date : 2024-07-31 07:53:34
 
 Directory /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src
 
-Total : 12 files,  569 codes, 10 comments, 74 blanks, all 653 lines
+Total : 12 files,  575 codes, 10 comments, 74 blanks, all 659 lines
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
@@ -12,8 +12,8 @@ Total : 12 files,  569 codes, 10 comments, 74 blanks, all 653 lines
 | filename | language | code | comment | blank | total |
 | :--- | :--- | ---: | ---: | ---: | ---: |
 | [backend/src/controllers/authController.js](/backend/src/controllers/authController.js) | JavaScript | 112 | 8 | 8 | 128 |
-| [backend/src/controllers/blogController.js](/backend/src/controllers/blogController.js) | JavaScript | 156 | 0 | 9 | 165 |
-| [backend/src/controllers/categoryController.js](/backend/src/controllers/categoryController.js) | JavaScript | 64 | 0 | 6 | 70 |
+| [backend/src/controllers/blogController.js](/backend/src/controllers/blogController.js) | JavaScript | 159 | 0 | 9 | 168 |
+| [backend/src/controllers/categoryController.js](/backend/src/controllers/categoryController.js) | JavaScript | 67 | 0 | 6 | 73 |
 | [backend/src/database/db.js](/backend/src/database/db.js) | JavaScript | 11 | 0 | 3 | 14 |
 | [backend/src/index.js](/backend/src/index.js) | JavaScript | 18 | 2 | 8 | 28 |
 | [backend/src/middleware/authMiddleware.js](/backend/src/middleware/authMiddleware.js) | JavaScript | 31 | 0 | 4 | 35 |

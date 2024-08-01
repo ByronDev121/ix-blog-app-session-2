@@ -1,21 +1,21 @@
-Date : 2024-07-25 11:19:26
+Date : 2024-07-31 07:53:34
 Directory : /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src
-Total : 12 files,  569 codes, 10 comments, 74 blanks, all 653 lines
+Total : 12 files,  575 codes, 10 comments, 74 blanks, all 659 lines
 
 Languages
 +------------+------------+------------+------------+------------+------------+
 | language   | files      | code       | comment    | blank      | total      |
 +------------+------------+------------+------------+------------+------------+
-| JavaScript |         12 |        569 |         10 |         74 |        653 |
+| JavaScript |         12 |        575 |         10 |         74 |        659 |
 +------------+------------+------------+------------+------------+------------+
 
 Directories
 +-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
 | path                                                                                            | files      | code       | comment    | blank      | total      |
 +-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
-| .                                                                                               |         12 |        569 |         10 |         74 |        653 |
+| .                                                                                               |         12 |        575 |         10 |         74 |        659 |
 | . (Files)                                                                                       |          1 |         18 |          2 |          8 |         28 |
-| controllers                                                                                     |          3 |        332 |          8 |         23 |        363 |
+| controllers                                                                                     |          3 |        338 |          8 |         23 |        369 |
 | database                                                                                        |          1 |         11 |          0 |          3 |         14 |
 | middleware                                                                                      |          1 |         31 |          0 |          4 |         35 |
 | models                                                                                          |          3 |        118 |          0 |         11 |        129 |
@@ -27,8 +27,8 @@ Files
 | filename                                                                                        | language   | code       | comment    | blank      | total      |
 +-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
 | /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/controllers/authController.js     | JavaScript |        112 |          8 |          8 |        128 |
-| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/controllers/blogController.js     | JavaScript |        156 |          0 |          9 |        165 |
-| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/controllers/categoryController.js | JavaScript |         64 |          0 |          6 |         70 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/controllers/blogController.js     | JavaScript |        159 |          0 |          9 |        168 |
+| /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/controllers/categoryController.js | JavaScript |         67 |          0 |          6 |         73 |
 | /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/database/db.js                    | JavaScript |         11 |          0 |          3 |         14 |
 | /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/index.js                          | JavaScript |         18 |          2 |          8 |         28 |
 | /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/middleware/authMiddleware.js      | JavaScript |         31 |          0 |          4 |         35 |
@@ -38,5 +38,5 @@ Files
 | /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/routes/auth.js                    | JavaScript |         16 |          0 |          7 |         23 |
 | /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/routes/blogs.js                   | JavaScript |         26 |          0 |         10 |         36 |
 | /Users/byron/DevitTechnology/Projects/iX/blog-app/backend/src/routes/categories.js              | JavaScript |         17 |          0 |          8 |         25 |
-| Total                                                                                           |            |        569 |         10 |         74 |        653 |
+| Total                                                                                           |            |        575 |         10 |         74 |        659 |
 +-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
