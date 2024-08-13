@@ -64,6 +64,13 @@ console.log(isUniqueOn());
  * @description
  * This function prints out the first n digits of the fibonacci sequence
  *
+ * - This approach uses a loop to calculate the fibonacci number
+ * - The loop runs n times
+ * - The function prints out the current number
+ * - The function calculates the next number by adding the current and next number
+ * - The function then sets the current number to the next number
+ * - The function sets the next number to the calculated number
+ *
  * Time complexity:
  * O(n)
  *
@@ -91,6 +98,14 @@ function fib(n) {
  *
  * @description
  * This function prints out the first n digits of the fibonacci sequence using recursion
+ * top down approach.
+ *
+ * - This approach uses a recursive function to calculate the fibonacci number
+ * - The function is called recursively until the base case is reached
+ * - The function is called with the current number and the previous number
+ * - The function prints out the current number
+ * - The function then calls itself with the current number and the sum of the current and previous number
+ * - The function returns when the base case is reached
  *
  * Time complexity:
  * O(n)
@@ -100,7 +115,7 @@ function fib(n) {
  *
  * @param {number} nIn
  */
-function recursiveFib(nIn) {
+function recursiveFibTopDown(nIn) {
   const helper = (n) => {
     if (cache.has(n)) {
       return cache.get(n);
@@ -121,10 +136,18 @@ function recursiveFib(nIn) {
 }
 
 /**
- * recursiveFibTopDown
+ * recursiveFibBottomUp
  *
  * @description
  * This function prints out the first n digits of the fibonacci sequence using recursion
+ * bottom up approach.
+ *
+ * - This approach uses a recursive function to calculate the fibonacci number
+ * - The function is called recursively until the base case is reached
+ * - The function is called with the current number and the previous number
+ * - The function prints out the current number
+ * - The function then calls itself with the current number and the sum of the current and previous number
+ * - The function returns when the base case is reached
  *
  * Time complexity:
  * O(n)
@@ -137,7 +160,7 @@ function recursiveFib(nIn) {
  * @param {number} b
  * @returns
  */
-function recursiveFib2(n, a, b) {
+function recursiveFibBottomUp(n, a, b) {
   if (n <= 1) {
     return;
   }
@@ -153,4 +176,4 @@ function recursiveFib2(n, a, b) {
 
 fib(10);
 recursiveFibTopDown(10);
-recursiveFib2BottomUp(10, 0, 1);
+recursiveFibBottomUp(10, 0, 1);
