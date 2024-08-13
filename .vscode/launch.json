@@ -7,11 +7,20 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Launch BlogApp Backend",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/backend/src/index.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Data Structures and Algortihms",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/dsa/index.js"
         }
     ]
 }

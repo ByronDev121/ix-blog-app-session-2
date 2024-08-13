@@ -4,21 +4,21 @@ const blogSchema = new mongoose.Schema(
   {
     authorId: {
       type: mongoose.Schema.Types.ObjectId,
-      required: true,
+      required: [true, "Author ID is required"],
       ref: "User",
     },
     categoryIds: {
       type: [mongoose.Schema.Types.ObjectId],
-      required: true,
+      required: [true, "Category IDs is required"],
       ref: "Category",
     },
     title: {
       type: String,
-      required: true,
+      required: [true, "Title is required"],
     },
     description: {
       type: String,
-      required: true,
+      required: [true, "Description is required"],
     },
     image: {
       type: String,
@@ -26,7 +26,7 @@ const blogSchema = new mongoose.Schema(
     },
     content: {
       type: Array,
-      required: true,
+      required: [true, "Content is required"],
     },
   },
   { timestamps: true }

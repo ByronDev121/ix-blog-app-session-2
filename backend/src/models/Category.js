@@ -4,15 +4,15 @@ const categorySchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      required: true,
+      required: [true, "Title is required"],
     },
     description: {
       type: String,
-      required: true,
+      required: [true, "Description is required"],
     },
     color: {
       type: String,
-      required: true,
+      required: [true, "Color is required"],
     },
   },
   { timestamps: true }
