@@ -171,7 +171,7 @@ function recursiveFibBottomUp(n, a, b) {
   temp = a + b;
   a = b;
   b = temp;
-  return recursiveFib2(n - 1, a, b);
+  return recursiveFibBottomUp(n - 1, a, b);
 }
 
 fib(10);
