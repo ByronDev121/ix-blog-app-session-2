@@ -1,4 +1,3 @@
-// Import functions to test:
 const { createBlog, getBlogs } = require("../blogController");
 
 const { mockReqData, mockBlogPostData } = require("../../../__mocks__/data");
@@ -30,7 +29,7 @@ describe("Blogs Controller: createBlog", () => {
     __mocks__.mockPopulate.mockClear();
   });
 
-  test("That the createBlog creates a blog with a valid payload", async () => {
+  test("Should create a blog with a valid payload", async () => {
     __mocks__.mockPopulate.mockResolvedValue(mockBlogPostData);
     __mocks__.mockSave.mockResolvedValue(mockBlogPostData);
     await createBlog(req, res);
@@ -55,7 +54,7 @@ describe("Blogs Controller: createBlog", () => {
     });
   });
 
-  test("That the createBlog function throws an error when the payload is not valid", async () => {
+  test("Should handle create blog errors", async () => {
     const error = new Error("Mock Error!");
     __mocks__.mockSave.mockRejectedValue(error);
     await createBlog(req, res);
@@ -88,7 +87,7 @@ describe("Blogs Controller: getBlogs", () => {
     });
   });
 
-  test("should handle get blogs errors", async () => {
+  test("Should handle get blogs errors", async () => {
     const error = new Error("Mock Error!");
     __mocks__.mockPopulate.mockRejectedValue(error);
     await getBlogs(req, res);
