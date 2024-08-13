@@ -29,39 +29,43 @@ const createBlog = async (req, res) => {
       .populate({
         path: "categoryIds",
       });
-    res.status(201).json({ message: "Created blog!", data: blogRes });
+    res.status(201);
+    res.json({ message: "Created blog!", data: blogRes });
   } catch (error) {
     const message = error?.message ? error.message : "Internal server error";
-    res.status(500).json({ message });
+    res.status(500);
+    res.json({ message });
   }
 };
 
 const getBlogs = async (req, res) => {
   try {
-    const blogsRed = await Blog.find()
+    const blogsRes = await Blog.find()
       .populate({
         path: "authorId",
       })
       .populate({
         path: "categoryIds",
       });
-    res.status(200).send({ message: "Return all blogs!", data: blogsRed });
+    res.status(200);
+    res.json({ message: "Return all blogs!", data: blogsRes });
   } catch (error) {
     const message = error?.message ? error.message : "Internal server error";
-    res.status(500).json({ message });
+    res.status(500);
+    res.json({ message });
   }
 };
 
 const getBlogById = async (req, res) => {
   try {
-    const blogsRed = await Blog.findById(req.params.id)
+    const blogsRes = await Blog.findById(req.params.id)
       .populate({
         path: "authorId",
       })
       .populate({
         path: "categoryIds",
       });
-    res.status(200).send({ message: "Return blog by ID!", data: blogsRed });
+    res.status(200).json({ message: "Return blog by ID!", data: blogsRes });
   } catch (error) {
     const message = error?.message ? error.message : "Internal server error";
     res.status(500).json({ message });
@@ -74,7 +78,7 @@ const getBlogByCategoryId = async (req, res) => {
     if (req.params.id != "null" && req.params.id != "undefined") {
       filter = { categoryIds: req.params.id };
     }
-    const blogsRed = await Blog.find(filter)
+    const blogsRes = await Blog.find(filter)
       .populate({
         path: "authorId",
       })
@@ -83,7 +87,7 @@ const getBlogByCategoryId = async (req, res) => {
       });
     res
       .status(200)
-      .send({ message: "Return blog by category ID!", data: blogsRed });
+      .json({ message: "Return blog by category ID!", data: blogsRes });
   } catch (error) {
     const message = error?.message ? error.message : "Internal server error";
     res.status(500).json({ message });
@@ -96,7 +100,7 @@ const getBlogByAuthorId = async (req, res) => {
     if (req.params.id != "null" && req.params.id != "undefined") {
       filter = { authorId: req.params.id };
     }
-    const blogsRed = await Blog.find(filter)
+    const blogsRes = await Blog.find(filter)
       .populate({
         path: "authorId",
       })
@@ -105,7 +109,7 @@ const getBlogByAuthorId = async (req, res) => {
       });
     res
       .status(200)
-      .send({ message: "Return blog by authorID!", data: blogsRed });
+      .json({ message: "Return blog by authorID!", data: blogsRes });
   } catch (error) {
     const message = error?.message ? error.message : "Internal server error";
     res.status(500).json({ message });

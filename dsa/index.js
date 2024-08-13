@@ -107,3 +107,8 @@ function recursiveFib2(n, a, b) {
 fib(10);
 recursiveFibTopDown(10);
 recursiveFib2BottomUp(10, 0, 1);
+<<<<<<< Updated upstream
+=======
+
+function newFunction() {}
+>>>>>>> Stashed changes
