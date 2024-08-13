@@ -12,11 +12,6 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/backend/src/index.js"
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
         },
         {
             "type": "node",
@@ -26,8 +21,6 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/dsa/index.js"
-<<<<<<< Updated upstream
-=======
         },
         {
             "type": "node-terminal",
@@ -35,8 +28,6 @@
             "name": "Debug tests",
             "command": "npm run test",
             "cwd": "${workspaceFolder}/backend"
->>>>>>> Stashed changes
->>>>>>> Stashed changes
         }
     ]
 }
