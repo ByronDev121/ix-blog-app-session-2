@@ -1,11 +1,19 @@
 const arr = [1, 2, 3, "a", 5, 6, "a", 8, 9];
 
-// Check that the arr has all unique entries
-
-//Time complexity
-// O(n**2)
-//Space complexity
-// O(2)
+/**
+ * isUniqueOn2
+ *
+ * @description
+ * This function checks if the array has unique elements
+ *
+ * Time complexity:
+ * O(n**2)
+ *
+ * Space complexity:
+ * O(2)
+ *
+ * @returns {boolean} true if all elements are unique, false otherwise
+ */
 function isUniqueOn2() {
   for (let i = 0; i < arr.length; i++) {
     const el = arr[i];
@@ -19,10 +27,20 @@ function isUniqueOn2() {
   return true;
 }
 
-// Time complexity:
-// O(n)
-// Space complexity
-// O(n)
+/**
+ * isUniqueOn
+ *
+ * @description
+ * This function checks if the array has unique elements
+ *
+ * Time complexity:
+ * O(n)
+ *
+ * Space complexity:
+ * O(n)
+ *
+ * @returns {boolean} true if all elements are unique, false otherwise
+ */
 const map = new Map();
 function isUniqueOn() {
   for (const el of arr) {
