@@ -57,6 +57,22 @@ console.log(isUniqueOn2());
 console.log(isUniqueOn());
 
 // Write a function that prints out the first 10 digits fo the fibonacci sequence
+
+/**
+ * fib
+ *
+ * @description
+ * This function prints out the first n digits of the fibonacci sequence
+ *
+ * Time complexity:
+ * O(n)
+ *
+ * Space complexity:
+ * O(1)
+ *
+ * @param {number} n
+ * @returns
+ */
 function fib(n) {
   if (n == 0) return console.log(0);
   if (n == 1) return console.log(1);
@@ -70,6 +86,20 @@ function fib(n) {
   }
 }
 
+/**
+ * recursiveFibTopDown
+ *
+ * @description
+ * This function prints out the first n digits of the fibonacci sequence using recursion
+ *
+ * Time complexity:
+ * O(n)
+ *
+ * Space complexity:
+ * O(n)
+ *
+ * @param {number} nIn
+ */
 function recursiveFib(nIn) {
   const helper = (n) => {
     if (cache.has(n)) {
@@ -90,6 +120,23 @@ function recursiveFib(nIn) {
   }
 }
 
+/**
+ * recursiveFibTopDown
+ *
+ * @description
+ * This function prints out the first n digits of the fibonacci sequence using recursion
+ *
+ * Time complexity:
+ * O(n)
+ *
+ * Space complexity:
+ * O(n)
+ *
+ * @param {number} n
+ * @param {number} a
+ * @param {number} b
+ * @returns
+ */
 function recursiveFib2(n, a, b) {
   if (n <= 1) {
     return;
